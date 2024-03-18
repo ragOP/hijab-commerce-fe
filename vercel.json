@@ -1,7 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/jeeto/(.*)", "destination": "/$1" },
-      { "source": "/jeeto", "destination": "/" }
-    ]
-  }
-  
