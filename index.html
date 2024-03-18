@@ -1,153 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hijab Shop</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        section {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #555;
-        }
-
-        .product {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .product-item {
-            max-width: 300px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .product-image {
-            max-width: 100%;
-            height: auto;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-		.jeans {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .jeans h2 {
-            color: #333;
-        }
-
-        .jeans-item {
-            max-width: 300px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .jeans-image {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Fan Landing Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    text-align: center;
+    padding: 50px;
+  }
+  .header {
+    margin-bottom: 50px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeInDown 1s ease;
+  }
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .image-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .image-grid img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .cta-buttons a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .cta-buttons a:hover {
+    background-color: #0056b3;
+  }
+  .cricket-details {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .commentator-section {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+</style>
 </head>
 <body>
-
-    <header>
-        <h1>Hijab Shop</h1>
-        <p>Your one-stop destination for stylish hijabs</p>
-    </header>
-
-    <section>
-        <h2>Featured Products</h2>
-
-        <div class="product">
-            <div class="product-item">
-                <img src="hijab1.jpg" alt="Hijab 1" class="product-image">
-                <h3>Hijab Style 1</h3>
-                <p>$20.99</p>
-            </div>
-
-            <div class="product-item">
-                <img src="hijab2.jpg" alt="Hijab 2" class="product-image">
-                <h3>Hijab Style 2</h3>
-                <p>$22.99</p>
-            </div>
-
-            <div class="product-item">
-                <img src="hijab3.jpg" alt="Hijab 3" class="product-image">
-                <h3>Hijab Style 3</h3>
-                <p>$18.99</p>
-            </div>
-        </div>
-    </section>
-	<section class="jeans">
-        <h2>Women's Jeans Collection</h2>
-
-        <div class="product">
-            <div class="jeans-item">
-                <img src="jeans1.jpg" alt="Jeans 1" class="jeans-image">
-                <h3>Skinny Fit Jeans</h3>
-                <p>$39.99</p>
-            </div>
-
-            <div class="jeans-item">
-                <img src="jeans2.jpg" alt="Jeans 2" class="jeans-image">
-                <h3>High Waist Jeans</h3>
-                <p>$45.99</p>
-            </div>
-
-            <div class="jeans-item">
-                <img src="jeans3.jpg" alt="Jeans 3" class="jeans-image">
-                <h3>Straight Leg Jeans</h3>
-                <p>$34.99</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Hijab Shop. All rights reserved.</p>
-    </footer>
-
+<div class="container">
+  <div class="header">
+    <h1>Welcome to Cricket Fan Page</h1>
+    <p>Check out these cricket images!</p>
+  </div>
+  <div class="image-grid">
+    <img src="cricket_image_1.jpg" alt="Cricket Image 1">
+    <img src="cricket_image_2.jpg" alt="Cricket Image 2">
+    <img src="cricket_image_3.jpg" alt="Cricket Image 3">
+    <img src="cricket_image_4.jpg" alt="Cricket Image 4">
+  </div>
+  <div class="cta-buttons">
+    <a href="https://t.me/yourtelegramchannel" target="_blank">Join Telegram Channel</a>
+    <a href="https://wa.me/yourwhatsappnumber" target="_blank">Join WhatsApp Channel</a>
+  </div>
+  
+  <!-- New section for cricket details -->
+  <div class="cricket-details">
+    <h2>Cricket Details</h2>
+    <p>Cricket is a bat-and-ball game played between two teams of eleven players. It originated in England and is popular in many countries around the world, especially in the Commonwealth nations.</p>
+    <p>The game is played on a circular field with a rectangular 22-yard-long pitch in the center. Each team takes turns batting and fielding, trying to score runs while preventing the opposing team from scoring.</p>
+    <p>Key aspects of cricket include batting, bowling, fielding, and strategy. Matches can last for several hours or several days, depending on the format of the game.</p>
+  </div>
+  
+  <!-- New section for latest women's cricket information -->
+  <div class="cricket-details">
+    <h2>Latest Women's Cricket Information</h2>
+    <p>Women's cricket has been gaining popularity worldwide, with more countries investing in women's cricket programs and leagues.</p>
+    <p>In recent years, the standard of women's cricket has risen significantly, with thrilling matches and exceptional performances from players around the globe.</p>
+    <p>Stay updated with the latest news, scores, and highlights from women's cricket to support and celebrate the achievements of female cricketers.</p>
+  </div>
+   <div class="commentator-section">
+    <h2>1. Play-by-Play Commentators</h2>
+    <p>Play-by-play commentators provide a detailed description of the action happening in real-time. They narrate the events of the game, including goals, runs, passes, and other key moments. These commentators are skilled at maintaining a steady flow of commentary to keep viewers engaged and informed.</p>
+  </div>
+  
+  <div class="commentator-section">
+    <h2>2. Color Commentators</h2>
+    <p>Color commentators, also known as analysts, offer insights, analysis, and expert commentary on the strategies, tactics, and techniques employed by the players and teams. They provide context, background information, and expert opinions to enhance the viewer's understanding of the game.</p>
+  </div>
+  
+  <div class="commentator-section">
+    <h2>3. Sideline Reporters</h2>
+    <p>Sideline reporters deliver updates, interviews, and behind-the-scenes information from the sidelines of the game. They provide injury reports, interviews with coaches and players, and other relevant information to give viewers a comprehensive view of the game.</p>
+  </div>
+  
+  <div class="commentator-section">
+    <h2>4. Studio Hosts</h2>
+    <p>Studio hosts anchor pre-game, halftime, and post-game shows from the studio. They facilitate discussions, interviews, and analysis with experts, former players, and other guests. Studio hosts keep viewers informed and entertained during breaks in the action.</p>
+  </div>
+</div>
 </body>
 </html>
